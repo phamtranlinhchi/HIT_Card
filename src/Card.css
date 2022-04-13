@@ -4,11 +4,10 @@
 }
 
 .card {
-    /* background-image: url('../public/bg.png');
-    background-size: cover; */
     width: 153.07px;
     height: 240.99px;
     position: relative;
+    border-left: 1px solid #fff;
 }
 
 .bgcard {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css'
 
-const Card =  React.forwardRef((props, ref) => {
+const Card =  React.forwardRef(function (props, ref) {
     return (
     
         <div className="card" ref={ref}>
