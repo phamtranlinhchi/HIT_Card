@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css'
 
-const Card =  React.forwardRef(function (props, ref) {
+const Card =  React.forwardRef(function ({user}, ref) {
     return (
     
         <div className="card" ref={ref}>
@@ -9,16 +9,16 @@ const Card =  React.forwardRef(function (props, ref) {
                 <img src="./bg.png" alt="backgroundcard" />
             </div>
             <div className="avatar">
-                <img src={props.avatar} alt="avatar" />
+                <img src={user.avatar} alt="avatar" />
             </div>
             <div className="name">
-                {props.name}
+                {user.name}
             </div>
             <div className="class-year">
-                {props.class_year}
+                {user.class_year}
             </div>
             <div className="qrcode">
-                <img src={props.qr_code} alt="" />
+                <img src={user.qr_code} alt="" />
             </div>
         </div>
     )

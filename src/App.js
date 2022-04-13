@@ -13,13 +13,7 @@ function App() {
     const componentRef = useRef();
     return (
         <div className='App'>
-            <Card
-                avatar={user.avatar}
-                name={user.name}
-                class_year={user.class_year}
-                qr_code={user.qr_code}
-                ref={componentRef}
-            />
+            <Card user={user} ref={componentRef} />
             <button onClick={() => exportComponentAsPNG(componentRef)}>
                 Export As PNG
             </button>
