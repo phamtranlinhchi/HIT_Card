@@ -18,7 +18,7 @@ const Card =  React.forwardRef(function ({user}, ref) {
                 {user.class_year}
             </div>
             <div className="qrcode">
-                <img src={user.qr_code} alt="" />
+                <img src={user.qr_code} alt="qrcode" />
             </div>
         </div>
     )
