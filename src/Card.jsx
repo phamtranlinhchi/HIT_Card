@@ -3,14 +3,14 @@ import { exportComponentAsPNG } from 'react-component-export-image';
 import React, {useRef} from 'react';
 import './Card.css'
 
-const Card =  React.forwardRef(function ({user}) {
+function Card ({user}) {
     const componentRef = useRef();
 
     const splitName = user.full_name.split(' ');
     const name = splitName[splitName.length - 1];
 
     return (
-        <div className="container">
+        <div className="card_container">
             <div className="card" ref={componentRef}>
                 <div className="bgcard">
                     <img src="./bg.png" alt="backgroundcard" />
@@ -33,6 +33,6 @@ const Card =  React.forwardRef(function ({user}) {
             </button>
         </div>
     )
-})
+}
 
 export default Card;
