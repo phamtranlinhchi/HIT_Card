@@ -5,8 +5,11 @@ const Card =  React.forwardRef((props, ref) => {
     return (
     
         <div className="card" ref={ref}>
+            <div className="bgcard">
+                <img src="./bg.png" alt="backgroundcard" />
+            </div>
             <div className="avatar">
-                <img src={props.avatar} alt="" />
+                <img src={props.avatar} alt="avatar" />
             </div>
             <div className="name">
                 {props.name}
