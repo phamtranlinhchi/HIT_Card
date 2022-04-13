@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    margin: 10px;
+}
+
 .card {
     width: 153.07px;
     height: 240.99px;
@@ -64,4 +68,8 @@
 .qrcode img {
     width: 60px;
     height: 60px;
+}
+
+button {
+    width: 100%;
 }
