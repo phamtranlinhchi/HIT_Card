@@ -1,0 +1,56 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card {
+    background-image: url('../public/bg.png');
+    background-size: cover;
+    width: 153.07px;
+    height: 240.99px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px rgb(242, 114, 33) solid;
+}
+
+.name {
+    position: absolute;
+    font-size: 11.5px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    top: 130px;
+}
+
+.class-year {
+    position: absolute;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    top: 146px;
+}
+
+.qrcode {
+    position: absolute;
+    top: 168px;
+    width: 100%;
+    text-align: center;
+}
+
+.qrcode img {
+    width: 60px;
+    height: 60px;
+}
